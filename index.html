@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Guess the Flag</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href="\flags\029Brazil.png">
+  <link rel="stylesheet" href="/style.css">
+  <script src = "/mapgame.js"></script>
+</head>
+<body>
+
+  <div id = game>
+    <div id ="infodisplay">
+      <div id ="scoreandtimer">
+        <h1 id = "timer">60</h1>
+        <h1 id = "score">Score</h1>
+      </div>
+      <img id = "flagPic" src = "flags/029Brazil.png" alt ="starterpic" height = "300">
+    </div>
+    <div id = buttons>
+      <div id = "btnset1">
+
+        <input id = "countryText" class = "btns" placeholder="type here">
+        <button id ="nextflag" title = "nextflagbutton" class = "btnset" onclick="guessButton(countryName)">Guess</button>
+      </div>
+      <div id = "btnset2">
+        <button id = "startGame" title="startGame" class = "btnset" onclick="newGame()">START</button>
+        <button id = "resetbutton" title = "resetbtn" class = "btnset"  onclick="reset()">RESET</button>
+        <button id ="30s" title = "30seconds" class = "btnset" onclick="thirtySeconds()">30s</button>
+        <button id ="60s" title = "60seconds" class = "btnset" onclick="sixtySeconds()">60s</button>
+        <button id ="90s" title = "90seconds" class = "btnset" onclick="ninetySeconds()">90s</button>
+      </div>
+    </div>
+    <div id = "results">   
+      <h1 id = "correctanswer"></h1>
+    </div>
+
+  </div>
+  <div id = "resultsleaders">
+    <h1 id = "totalcorrect"></h1>
+    <h1 id = "percent"></h1>
+  </div>
+  <h1 id = "randomarray"></h1>
+</body>
+</html>

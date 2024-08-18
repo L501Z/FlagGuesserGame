@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'MBlack';
+    src: url(Montserrat-Regular.woff2) format(woff2);
+}
+
+body{
+    font-family: MBlack;
+    color: rgb(170, 170, 170);
+
+    background: linear-gradient(90deg, rgb(41, 37, 37) 0 55%, rgb(34, 34, 37) 50% 100%)
+}
+
+#game{
+    height: 900px;
+    width: 1000px;
+    background-color: rgb(53, 52, 52);
+}
+
+#infodisplay{
+    display: flex;
+    height: 400px;
+    width: 800px;
+    padding: 2%;
+    padding-top: 10%;
+    padding-left: 10%;
+    
+}
+
+#scoreandtimer{
+    width :50px;
+    height: 50px;
+    margin-right: 10%;
+}
+
+#buttons{
+    padding-left: 22%;  
+    height: 100px;
+    width: 550px;
+}
+
+#btnset1{
+    padding: 2%;
+    display: flex;
+    gap: 10px;
+}
+#btnset2{
+    display: flex;
+    gap: 20px;
+    padding: 2%;
+}
+
+
+.btnset{
+    border-radius: 5px;
+    font-family: 'MBlack';
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(194, 201, 201);
+    color: rgb(133, 127, 127);
+    transition: background-color 0.2s ease;
+    transition: color 0.2s ease;
+    border: none;
+}
+
+.btnset:hover{
+    background-color: rgb(198, 202, 202);
+    color: black;
+
+}
+
+.btns{
+    font-family: 'MBlack';
+    width: 60%;
+}
+
+#results{
+    width: 900px;
+    height: 300px;
+    text-align: center;
+}
+
+
+
+#correctanswer{
+    text-align: center;
+    padding: 2%;
+    padding-top: 5%;
+}
+
+#nextflag{
+    background-color: rgb(194, 201, 201);
+    color: rgb(133, 127, 127);
+    transition: color 0.1s ease;
+}
+#nextflag:hover{
+    color: rgb(0, 0, 0);
+}
+
+#resultsleaders{
+    text-align: center;
+    width: 155%;
+    margin-top: -25%;
+}
