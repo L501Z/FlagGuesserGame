@@ -19,7 +19,7 @@ function newGame(seconds){
     timer(seconds);
     clearScreen();
     score = 0;
-    totalAttempts = 0;
+    totalCorrect = 0;
     possibleCorrect = 0;
 
     nextFlag();
