@@ -105,7 +105,8 @@ function nextFlag(){
             nextFlag();
         }
 
-        document.getElementById("flagPic").src="flags/"+randomNumber+countryName+".png";
+        console.log(randomNumber,countryName);
+        document.getElementById("flagPic").src="/flags/"+randomNumber+countryName+".png";
         
 
     });
@@ -157,6 +158,7 @@ function ninetySeconds(){
 }
 
 function reset(seconds){
+    document.getElementById("startGame").style.visibility = "visible";
     if (!seconds){
         seconds = "60";
     }  

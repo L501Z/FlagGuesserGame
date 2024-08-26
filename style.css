@@ -11,7 +11,7 @@ body{
 }
 
 #game{
-    height: 900px;
+    height: 100%;
     width: 1000px;
     background-color: rgb(53, 52, 52);
 }
@@ -98,7 +98,15 @@ body{
 }
 
 #resultsleaders{
+    color: rgb(165, 97, 97);
     text-align: center;
     width: 155%;
-    margin-top: -25%;
+    margin-left: 4%;
+    margin-top: -45%;
 }
+
+#totalcorrect{
+    margin-top: 5%;
+}
+
+
